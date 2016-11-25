@@ -1,15 +1,20 @@
 # appium-selenium-testng-framework
-Test framework for Mobile, Web and API tests with eye candy reporting. With sample tests against 
+All-in-one test automation framework with sample tests against Greenfield test management app.
 
-### Stack:
+### Highlights: 
+  * Support for Mobile, Web and API testing
+  * Parallel test execution
+  * Support for Selenium Grid
+  * Custom test listeners (support for integration with various APIs) 
+  * Page Object pattern
+  * Eye candy reports (with screenshots) deployed on standalone server
+  
+### Technology stack:
   * TestNG (test runner)
   * Appium (mobile testing)
   * Selenium (web app testing)
   * REST-assured (REST API testing)
   * Allure (reporting)
-
-### Highlights: 
-parallel test execution, custom test listeners, Page Object pattern, support for Selenium Grid
 
 ## Prerequisites
 1. Deploy Greenfield app as described in https://github.com/maciejd/greenfield-django
