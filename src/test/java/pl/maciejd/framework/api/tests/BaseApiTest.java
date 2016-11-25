@@ -1,4 +1,4 @@
-package pl.maciejd.framework.api;
+package pl.maciejd.framework.api.tests;
 
 import org.testng.annotations.BeforeSuite;
 

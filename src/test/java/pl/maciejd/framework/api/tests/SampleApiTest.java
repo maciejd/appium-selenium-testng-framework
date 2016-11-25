@@ -1,4 +1,4 @@
-package pl.maciejd.framework.api;
+package pl.maciejd.framework.api.tests;
 
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;

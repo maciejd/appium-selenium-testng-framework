@@ -9,6 +9,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<browser>firefox</browser>
+		<appUrl></appUrl>
 		<threads>1</threads>
 		<remote>true</remote>
 		<seleniumGridURL>http://localhost:4444/wd/hub</seleniumGridURL>
@@ -97,7 +98,7 @@
 						<version>2.19.1</version>
 						<configuration>
 							<includes>
-								<include>**/${suite}/**Test.java</include>
+								<include>**/${suite}/tests/**Test.java</include>
 							</includes>
 							<!-- <suiteXmlFiles> -->
 							<!-- <suiteXmlFile>${suite}</suiteXmlFile> -->
@@ -109,6 +110,7 @@
 							<threadCount>${threads}</threadCount>
 							<systemPropertyVariables>
 								<browser>${browser}</browser>
+								<appUrl>${appUrl}</appUrl>
 								<screenshotDirectory>${project.build.directory}/screenshots</screenshotDirectory>
 								<mobileDriver>${mobile}</mobileDriver>
 								<remoteDriver>${remote}</remoteDriver>

@@ -1,4 +1,4 @@
-package pl.maciejd.framework.tests;
+package pl.maciejd.framework.web.tests;
 
 import java.util.ResourceBundle;
 
