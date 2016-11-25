@@ -133,6 +133,12 @@
 							<!-- <name>usedefaultlisteners</name> -->
 							<!-- <value>false</value> -->
 							<!-- </property> -->
+							<properties>
+								<property>
+									<name>listener</name>
+									<value>pl.maciejd.framework.listeners.CustomListener</value>
+								</property>
+							</properties>
 						</configuration>
 					</plugin>
 					<plugin>

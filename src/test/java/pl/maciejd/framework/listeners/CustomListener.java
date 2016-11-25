@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import pl.maciejd.framework.utils.Utils;
+
 
 public class CustomListener extends TestListenerAdapter {
 
@@ -19,5 +21,13 @@ public class CustomListener extends TestListenerAdapter {
 				.id();
 		LOGGER.info("Starting test id: " + id);
 	}
+
+	@Override
+	public void onTestSuccess(ITestResult tr) {
+		super.onTestSuccess(tr);
+		Utils.takeScreenshot();
+	}
+	
+	
 
 }
