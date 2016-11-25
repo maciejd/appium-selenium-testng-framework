@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="maciejd template suite" verbose="1" parallel="methods"
+	thread-count="1">
+	<listeners>
+<!-- 		<listener class-name="pl.maciejd.framework.listeners.CustomListener" /> -->
+	</listeners>
+	<test name="Dev Tests">
+		<classes>
+<!-- 			<class name="pl.maciejd.framework.web.tests.TwitterLoginTest"> -->
+			<class name="pl.maciejd.framework.api.SampleApiTest">
+			</class>
+		</classes>
+	</test>
+</suite>
