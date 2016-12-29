@@ -28,7 +28,7 @@ public enum DriverType implements DriverSetup {
 		public DesiredCapabilities getDesiredCapabilities(Proxy proxySettings) {
 			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 			// TODO Uncomment the capability settings below to use Marionette
-			// capabilities.setCapability("marionette", true);
+			 capabilities.setCapability("marionette", true);
 			// capabilities.setCapability("binary",
 			// System.getProperty("webdriver.gecko.driver"));
 			return addProxySettings(capabilities, proxySettings);
@@ -138,7 +138,7 @@ public enum DriverType implements DriverSetup {
 
 		@Override
 		public WebDriver getWebDriverObject(URL gridURL, DesiredCapabilities desiredCapabilities) {
-			return new IOSDriver(gridURL, desiredCapabilities);
+			return new IOSDriver<>(gridURL, desiredCapabilities);
 		}
 
 	};

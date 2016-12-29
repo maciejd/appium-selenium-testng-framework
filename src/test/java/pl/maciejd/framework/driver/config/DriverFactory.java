@@ -90,11 +90,15 @@ public class DriverFactory {
 			String platformVersion = System.getProperty("platformVersion");
 			String deviceName = System.getProperty("deviceName");
 			String app = System.getProperty("app");
-			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM, platform);
+			desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "");
 			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 			desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformVersion);
 			desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 			desiredCapabilities.setCapability(MobileCapabilityType.APP, app);
+			desiredCapabilities.setCapability("autoAcceptAlerts", true);
+			desiredCapabilities.setCapability("iosInstallPause", 30000);
+			desiredCapabilities.setCapability("noReset", true);
+			desiredCapabilities.setCapability("realDeviceLogger", "/usr/local/lib/node_modules/deviceconsole/deviceconsole");
 			webdriver = selectedDriverType.getWebDriverObject(appiumGridURL, desiredCapabilities);
 		}
 
